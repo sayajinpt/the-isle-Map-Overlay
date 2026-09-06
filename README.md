@@ -66,13 +66,18 @@ Only need to setup this once !
 	-Done
     
 4. Just Open the livemap page and stay signed in if the site requires it, then just leave the page open in background and go to play. (https://bosch-island.com/map-tracker) or (https://voice-island.com/dashboard/livemap)
+
 5. Confirm the small **badge** on the page shows the companion bridge as online / sending.
+
 6.After this one time setup , everytime u play , u just need to open the webpage map, set to track and leave it in background while playing.
 
 **Quick explain :
 -install and configure tampermonkey extention
+
 -intall the scripts into Tampermonkey
+
 -reload the map webpage after scripts installed
+
 -play the game.
 
 **IMPORTANT INFO**
