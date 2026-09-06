@@ -1,8 +1,91 @@
 # The Isle Companion
 
-A local **Windows map companion** for [The Isle: Evrima](https://store.steampowered.com/app/376210/The_Isle/) on the Gateway map.
+A local **Windows map companion** for [The Isle: Evrima] on the Gateway map.
 
-It sits beside the game as a Mini Map overlay and full map so you can track where you are, mark destinations, and see migrations, sanctuaries, patrol zones, water, and other useful layers — without reading game memory or bypassing anti-cheat.
+** This app tryes to create some sort of Live map, avoiding the need for players to use TAB key to copy coords.
+
+It sits beside the game as a Mini Map overlay and full map so you can track where you are, mark destinations, and see migrations, sanctuaries, patrol zones, water, and other useful layers.
+
+-Live mode works well in Voice Island servers because theyr map updates more freequently than Bosch servers.
+
+-In Bosch servers u might need to still use other technichs like copy-to-clipboard, between each Live update if u need position before next update.
+
+-Bosch servers might seems frozen but is just because they update only on every 30 seconds.
+
+-For the Prime run, the app keep track of were u were and change colours of the zones u were confirmed to be there.
+   it only confirms u were there when the update comes from the live maps. 
+   it does not confirm if u use copy to clipboard or ocr.
+   like this we assure that the server confirmed our position.
+
+
+
+## Quick start (players)
+
+### Option A — Portable build (recommended)
+
+1. Download **`IsleCompanionV2-Portable.zip`** from the latest [GitHub Release](../../releases).
+2. Unzip the **whole folder** somewhere (keep every file next to the `.exe`).
+3. Run `IsleCompanionV2.exe`.
+4. Choose **Bosch** or **Voice Island**.
+5. In Options, turn on the position sources you want (Clipboard and/or Live map bridge).
+
+If Windows says a DLL is missing, install the [Visual C++ Redistributable (x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist).
+
+### Option B — Build from source
+
+See [Build from source](#build-from-source) below.
+
+---
+
+## Live map setup (Bosch / Voice Island)
+Only need to setup this once !
+
+1. Install a userscript manager: **[Tampermonkey](https://www.tampermonkey.net/)** (Chrome / Edge / Firefox).
+   - Go to the tampermonkey extention and select "manage extention", toogle ON "Allow user scripts"
+
+2. In the companion:
+   - Select the matching server at launch (or **Change Server…**)
+   - Enable **Live map bridge** in Options  
+   - Note the **Port** (often `8765` or `8770`) — the script auto-detects common ports
+
+3. Install the script from this repo:
+   - Bosch → [`tools/bosch_island_bridge.user.js`](tools/bosch_island_bridge.user.js)
+   - Voice Island → [`tools/voice_island_bridge.user.js`](tools/voice_island_bridge.user.js)  
+   - In app Options also has a Tab "livemap userscript", clicking it , exposes the scripts for user to copy/past
+   
+   
+   Installing the script:
+	- there are 2 scrips, u need to install both for both sources work(bosch and voice-island), do the script install process for both scripts !
+	- go to your browser , select the tampermonkey extention u installed and select "create new script", copie the contents of the provided scripts into each new script and save it.
+	-confirm the script toogle is ON(green) on tampermonkey.
+	
+	-Done
+    
+4. Just Open the livemap page and stay signed in if the site requires it, then just leave the page open in background and go to play. (https://bosch-island.com/map-tracker) or (https://voice-island.com/dashboard/livemap)
+5. Confirm the small **badge** on the page shows the companion bridge as online / sending.
+6.After this one time setup , everytime u play , u just need to open the webpage map, set to track and leave it in background while playing.
+
+**Quick explain :
+-install and configure tampermonkey extention
+-intall the scripts into Tampermonkey
+-reload the map webpage after scripts installed
+-play the game.
+
+**IMPORTANT INFO**
+-while playing, after a while if the map stops updating(both bosch or voice island), just go back to the webpage map u have open in background and just reload the page. u can continue playing untill u need to do this again.
+Its a tradeoff we have by having a some sort of Live map.  
+
+
+**Voice Island tips**
+- Updates roughly every few seconds (script polls about every 7s).
+- If several players are online, type **your** map/player name in the badge and click **Track**.
+- Badge **Mode** can switch coordinate modes if your pin ever looks wrong; default is raw API (`api`).
+
+**Bosch tips**
+- The script reads **Live Position** (Map X / Map Y) from the page.
+- It soft-reloads the tracker tab periodically so Bosch live updates keep flowing.
+
+---
 
 ---
 
@@ -43,48 +126,6 @@ Prime-run progress and filters are stored **per server**, so switching does not 
 
 ---
 
-## Quick start (players)
-
-### Option A — Portable build (recommended)
-
-1. Download **`IsleCompanionV2-Portable.zip`** from the latest [GitHub Release](../../releases).
-2. Unzip the **whole folder** somewhere (keep every file next to the `.exe`).
-3. Run `IsleCompanionV2.exe`.
-4. Choose **Bosch** or **Voice Island**.
-5. In Options, turn on the position sources you want (Clipboard and/or Live map bridge).
-
-If Windows says a DLL is missing, install the [Visual C++ Redistributable (x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist).
-
-### Option B — Build from source
-
-See [Build from source](#build-from-source) below.
-
----
-
-## Live map setup (Bosch / Voice Island)
-
-1. Install a userscript manager: **[Tampermonkey](https://www.tampermonkey.net/)** (Chrome / Edge / Firefox).
-2. In the companion:
-   - Select the matching server at launch (or **Change Server…**)
-   - Enable **Live map bridge** in Options  
-   - Note the **Port** (often `8765` or `8770`) — the script auto-detects common ports
-3. Install the script from this repo:
-   - Bosch → [`tools/bosch_island_bridge.user.js`](tools/bosch_island_bridge.user.js)
-   - Voice Island → [`tools/voice_island_bridge.user.js`](tools/voice_island_bridge.user.js)  
-   (Options also has a helper to open the script / livemap page.)
-4. Open the livemap page and stay signed in if the site requires it.
-5. Confirm the small **badge** on the page shows the companion bridge as online / sending.
-
-**Voice Island tips**
-- Updates roughly every few seconds (script polls about every 7s).
-- If several players are online, type **your** map/player name in the badge and click **Track**.
-- Badge **Mode** can switch coordinate modes if your pin ever looks wrong; default is raw API (`api`).
-
-**Bosch tips**
-- The script reads **Live Position** (Map X / Map Y) from the page.
-- It soft-reloads the tracker tab periodically so Bosch live updates keep flowing.
-
----
 
 ## Clipboard tracking
 
