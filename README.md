@@ -1,6 +1,7 @@
+
 # The Isle Companion
 
-<img width="2559" height="1439" alt="Captura de ecrã 2026-09-06 131554" src="https://github.com/user-attachments/assets/8afa2c6c-c22a-49d8-896a-7000ff595c87" /><img width="314" height="330" alt="Captura de ecrã 2026-09-06 131624" src="https://github.com/user-attachments/assets/1e653407-dc73-48a2-899a-560b1435c64c" />
+<img width="2559" height="1439" alt="Captura de ecrã 2026-09-06 131554" src="https://github.com/user-attachments/assets/8afa2c6c-c22a-49d8-896a-7000ff595c87" /><img width="314" height="330" alt="Captura de ecrã 2026-09-06 131624" src="https://github.com/user-attachments/assets/1e653407-dc73-48a2-899a-560b1435c64c" /><img width="1593" height="1316" alt="Captura de ecrã 2026-09-06 125531" src="https://github.com/user-attachments/assets/015ed31e-b39c-4fc7-b0ae-0a12dc6ab577" />
 
 
 A local **Windows map companion** for [The Isle: Evrima] on the Gateway map.
