@@ -1,5 +1,3 @@
-<img width="4096" height="2478" alt="IMG_20260906_130030" src="https://github.com/user-attachments/assets/b6aafdd6-a0e5-44ea-a864-88ffc50dc42d" />
-<img width="4096" height="2478" alt="IMG_20260906_130030" src="https://github.com/user-attachments/assets/22b365dd-062e-47f3-b13c-06c4dd0daac2" />
 # The Isle Companion
 
 A local **Windows map companion** for [The Isle: Evrima] on the Gateway map.
