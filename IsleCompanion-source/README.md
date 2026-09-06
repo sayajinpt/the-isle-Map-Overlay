@@ -1,3 +1,4 @@
+<img width="314" height="330" alt="Captura de ecrã 2026-09-06 131624" src="https://github.com/user-attachments/assets/297531db-96a6-420d-bde5-e9b62656ebd0" />
 # The Isle Companion
 
 A local **Windows map companion** for [The Isle: Evrima] on the Gateway map.
@@ -116,6 +117,7 @@ At launch you choose which community live map feeds the companion:
 Prime-run progress and filters are stored **per server**, so switching does not wipe the other profile.
 
 ---
+<img width="2559" height="1439" alt="Captura de ecrã 2026-09-06 131554" src="https://github.com/user-attachments/assets/02c22c3a-a791-47b5-bfdd-16b7a632d189" />
 
 ## Security / what this is *not*
 
