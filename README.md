@@ -1,5 +1,8 @@
 # The Isle Companion
 
+<img width="2559" height="1439" alt="Captura de ecrã 2026-09-06 131554" src="https://github.com/user-attachments/assets/8afa2c6c-c22a-49d8-896a-7000ff595c87" /><img width="314" height="330" alt="Captura de ecrã 2026-09-06 131624" src="https://github.com/user-attachments/assets/1e653407-dc73-48a2-899a-560b1435c64c" />
+
+
 A local **Windows map companion** for [The Isle: Evrima] on the Gateway map.
 
 ** This app tryes to create some sort of Live map, avoiding the need for players to use TAB key to copy coords.
