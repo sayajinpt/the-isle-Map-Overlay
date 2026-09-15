@@ -40,7 +40,7 @@ If Windows says a DLL is missing, install the [Visual C++ Redistributable (x64)]
 See [Build from source](#build-from-source) below.
 
 ---
-
+INSTALL / SETUP
 ## Live map setup (Bosch / Voice Island)
 Only need to setup this once !
 
@@ -53,14 +53,12 @@ Only need to setup this once !
    - Note the **Port** (often `8765` or `8770`) — the script auto-detects common ports
 
 3. Install the script from this repo:
-   - Bosch → [`tools/bosch_island_bridge.user.js`](tools/bosch_island_bridge.user.js)
-   - Voice Island → [`tools/voice_island_bridge.user.js`](tools/voice_island_bridge.user.js)  
+   - UserScript → [`tools/isle_companion_live_map_bridge.user.js)  
    - In app Options also has a Tab "livemap userscript", clicking it , exposes the scripts for user to copy/past
    
    
    Installing the script:
-	- there are 2 scrips, u need to install both for both sources work(bosch and voice-island), do the script install process for both scripts !
-	- go to your browser , select the tampermonkey extention u installed and select "create new script", copie the contents of the provided scripts into each new script and save it.
+	- go to your browser , select the tampermonkey extention u installed and select "create new script", copie the contents of the provided script into new script and save it.
 	-confirm the script toogle is ON(green) on tampermonkey.
 	
 	-Done
@@ -74,9 +72,9 @@ Only need to setup this once !
 **Quick explain :
 -install and configure tampermonkey extention
 
--intall the scripts into Tampermonkey
+-intall the script into Tampermonkey
 
--reload the map webpage after scripts installed
+-reload the map webpage after script installed
 
 -play the game.
 
