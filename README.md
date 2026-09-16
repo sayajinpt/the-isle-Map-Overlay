@@ -1,7 +1,10 @@
 
 # The Isle Companion
 
-<img width="2559" height="1439" alt="Captura de ecrã 2026-09-06 131554" src="https://github.com/user-attachments/assets/8afa2c6c-c22a-49d8-896a-7000ff595c87" /><img width="314" height="330" alt="Captura de ecrã 2026-09-06 131624" src="https://github.com/user-attachments/assets/1e653407-dc73-48a2-899a-560b1435c64c" /><img width="1593" height="1316" alt="Captura de ecrã 2026-09-06 125531" src="https://github.com/user-attachments/assets/015ed31e-b39c-4fc7-b0ae-0a12dc6ab577" />
+<img width="370" height="344" alt="Captura de ecrã 2026-09-15 230703" src="https://github.com/user-attachments/assets/b9a9a497-82d1-4eeb-a082-48a7e7449153" />
+<img width="2559" height="1439" alt="Captura de ecrã 2026-09-15 230809" src="https://github.com/user-attachments/assets/46ca7430-88cf-4489-a26d-6e78f2aabdc4" />
+
+
 
 
 A local **Windows map companion** for [The Isle: Evrima] on the Gateway map.
@@ -41,7 +44,8 @@ See [Build from source](#build-from-source) below.
 
 ---
 INSTALL / SETUP
-## Live map setup (Bosch / Voice Island)
+## Live map setup (Bosch / Voice Island)<img width="2559" height="1439" alt="Captura de ecrã 2026-09-15 230752" src="https://github.com/user-attachments/assets/c681e2f8-15f0-46b7-9824-0659b2af107d" />
+
 Only need to setup this once !
 
 1. Install a userscript manager: **[Tampermonkey](https://www.tampermonkey.net/)** (Chrome / Edge / Firefox).
